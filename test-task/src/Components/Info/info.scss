@@ -1,0 +1,101 @@
+@import "../../index.scss";
+
+body {
+  background-color: $main-color;
+  background-image: url("../../Assets/img/map.png");
+}
+
+.info_items {
+  padding: 0px 374px 0px 374px;
+
+  .info_items-text {
+    margin-top: 121px;
+
+    h1 {
+      font-family: $font-lato;
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 30px;
+      &::before {
+        content: attr(data-color1);
+        color: $white-text;
+      }
+
+      &::after {
+        content: attr(data-color2);
+        color: $blue-text;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: $font-lato;
+      font-size: 25px;
+      color: #bbbbbb;
+    }
+  }
+  .info_items-elipses {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .set {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+
+    p {
+      width: 200px;
+      height: 48px;
+      color: white;
+    }
+  }
+
+  .set {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+
+    p {
+      width: 200px;
+      height: 48px;
+      color: white;
+    }
+  }
+
+  .info_items-elipses img {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+  }
+
+  .info_items-interface_selectorsinput {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      width: 370px;
+      height: 48px;
+      margin: 30px;
+      background: hsla(0, 0%, 100%, 0.85);
+      border-radius: 5px;
+    }
+    select {
+      width: 370px;
+      height: 48px;
+      margin: 30px;
+      background: hsla(0, 0%, 100%, 0.85);
+      border-radius: 5px;
+    }
+  }
+}

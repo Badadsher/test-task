@@ -1,0 +1,77 @@
+@import "../../index.scss";
+
+.section {
+  .section_items {
+    padding-top: 103px;
+    padding-left: 375px;
+    padding-bottom: 202px;
+
+    .section_items-text {
+      p {
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 10px;
+        font-family: $font-lato;
+        font-weight: bold;
+      }
+
+      ul {
+        font-size: 20px;
+        list-style-type: none;
+        font-family: $font-lato;
+      }
+
+      h1 {
+        font-family: $font-lato;
+        text-transform: uppercase;
+        width: 780px;
+        height: 125px;
+        text-align: left;
+        font-size: 3rem;
+
+        &::before {
+          content: attr(data-color1);
+          color: $blue-text;
+        }
+
+        &::after {
+          content: attr(data-color2);
+          color: $blue-text;
+        }
+
+        &:not(::first-of-type)::not(::last-of-type) {
+          color: black;
+        }
+      }
+    }
+
+    .section_items-buttons {
+      margin-top: 80px;
+
+      button:first-child {
+        font-family: $font-lato;
+        width: 183px;
+        height: 43px;
+        margin-right: 30px;
+        background: $blue-text;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        outline: none;
+        cursor: pointer;
+      }
+      button:last-child {
+        font-family: $font-lato;
+        width: 183px;
+        height: 43px;
+        margin-right: 30px;
+        background: $white-text;
+        border-radius: 5px;
+        border: 1px solid #6f6d7b;
+        outline: none;
+        margin-bottom: 202px;
+        cursor: pointer;
+      }
+    }
+  }
+}

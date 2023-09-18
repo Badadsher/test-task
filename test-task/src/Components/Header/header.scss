@@ -1,0 +1,42 @@
+@import "../../index.scss";
+
+.header {
+  background: $main-color;
+  top: 0;
+  position: sticky;
+  .header_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 375px;
+
+    .header_items-logo {
+      padding: 33px;
+
+      h1 {
+        font-family: $font-raleway;
+        &::before {
+          color: $white-text;
+          content: attr(data-color1);
+        }
+        &::after {
+          color: $blue-text;
+          content: attr(data-color2);
+        }
+      }
+    }
+    .header_items-menu ul {
+      list-style: none;
+      display: flex;
+      color: $white-text;
+      gap: 60px;
+      font-family: $font-lato;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .header_items-menu ul li:first-child {
+      color: $blue-text;
+    }
+  }
+}
